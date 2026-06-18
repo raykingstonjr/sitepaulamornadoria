@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0f0a0e">
+<title>Paula Morna Dória | International Opera Soprano</title>
+<meta name="description" content="Paula Morna Dória — international opera soprano, D.M.A. Rutgers University. NYMA 2026 Grand Prize Opera winner. Available for opera engagements, concerts and recitals across Portugal, USA, UK, Italy and Spain.">
+<meta name="keywords" content="opera soprano, international opera singer, Paula Morna Dória, soprano lírica, opera singer booking, opera contralto, lyric soprano Portugal, DMA Rutgers opera singer, opera singer for hire, classical singer Porto">
+<meta property="og:title" content="Paula Morna Dória | International Opera Soprano">
+<meta property="og:description" content="Award-winning international opera soprano. NYMA 2026 Grand Prize · Voice Winners 2025 Gold · Tizziano Rosetti 2024. Available for bookings.">
+<meta property="og:type" content="profile">
+<meta name="robots" content="index, follow">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Paula Morna Dória",
+  "alternateName": "Paula Dória",
+  "jobTitle": "Opera Soprano",
+  "description": "International opera soprano and Doctor of Musical Arts (Rutgers University), winner of the NYMA 2026 Grand Prize Opera and Platinum Professional Award, Voice Winners 2025 Gold Prize, and Tizziano Rosetti 2024 First Prize.",
+  "nationality": "Portuguese",
+  "birthPlace": "Porto, Portugal",
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "Rutgers University, Mason Gross School of the Arts"},
+    {"@type": "CollegeOrUniversity", "name": "Indiana University School of Music"},
+    {"@type": "CollegeOrUniversity", "name": "Universidade do Porto"}
+  ],
+  "award": [
+    "NYMA New York Music Award 2026 — Grand Prize, Opera",
+    "NYMA New York Music Award 2026 — Platinum Prize, Professional",
+    "Voice Winners 2025 — Gold Prize, Professional",
+    "Tizziano Rosetti Competition 2024 — First Prize, Lugano, Switzerland",
+    "Bellini International Vocal Competition 2003 — Best Chamber Music Singer"
+  ],
+  "sameAs": [
+    "https://www.instagram.com/doriattitude",
+    "https://operabase.com/paula-doria-a23529/pt",
+    "https://www.youtube.com/@paulamornadoria1236"
+  ],
+  "email": "mailto:paulamornadoria@gmail.com",
+  "genre": "Opera"
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600&family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Cinzel:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- audio elements for ambient player -->
+<audio id="audio-track-1" loop preload="none"><source src="" type="audio/mpeg"></audio>
+<audio id="audio-track-2" loop preload="none"><source src="" type="audio/mpeg"></audio>
+
+<!-- ═══════════════ SPLASH SCREEN ═══════════════ -->
+<div id="splash">
+  <img id="splash-bg" src="assets/images/portrait_purple_standing.jpg" alt="">
+  <div id="splash-overlay"></div>
+  <div id="splash-content">
+    <p class="sp-pre">International Opera Soprano</p>
+    <span class="sp-name">PAULA MORNA</span>
+    <span class="sp-doria">DÓRIA</span>
+    <div class="sp-line"></div>
+    <p class="sp-voice">Porto · Lisbon · New York</p>
+  </div>
+</div>
+
+<div id="site">
+
+<!-- ═══════════════ TOPBAR ═══════════════ -->
+<header id="topbar">
+  <a href="#" data-goto="hero" class="brand">
+    Paula Morna <strong>DÓRIA</strong>
+    <span class="sub" data-en>International Opera Soprano</span>
+    <span class="sub" data-pt>Soprano Lírica Internacional</span>
+  </a>
+  <div class="tools">
+    <div class="lang-switch">
+      <button type="button" class="lang-btn active" data-set-lang="en">EN</button>
+      <button type="button" class="lang-btn" data-set-lang="pt">PT</button>
+    </div>
+    <div style="position:relative;">
+      <button type="button" id="music-toggle-btn" class="tool-btn" aria-label="Music player" aria-haspopup="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18V5l12-2v13" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      </button>
+      <div id="music-pop" class="music-pop">
+        <div class="label" data-en>Ambient Recital</div>
+        <div class="label" data-pt>Recital Ambiente</div>
+        <div class="track" data-track="1"><span class="dot"></span><span data-en>Track I — Vocalise</span><span data-pt>Faixa I — Vocalise</span></div>
+        <div class="track" data-track="2"><span class="dot"></span><span data-en>Track II — Aria</span><span data-pt>Faixa II — Ária</span></div>
+        <hr>
+        <div class="vol-row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E8A0BE" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/></svg>
+          <input type="range" id="vol-range" min="0" max="1" step="0.01" value="0.5">
+        </div>
+      </div>
+    </div>
+    <button type="button" id="burger-btn" class="burger" aria-label="Open menu" aria-expanded="false">
+      <span class="lines"><span></span><span></span><span></span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════════════ FULLSCREEN MENU ═══════════════ -->
+<div id="menu-overlay">
+  <div class="menu-grid">
+    <nav class="menu-links" aria-label="Primary">
+      <a href="#" data-goto="hero" class="menu-link"><span class="num">01</span><span data-en>Home</span><span data-pt>Início</span></a>
+      <a href="#" data-goto="awards" class="menu-link"><span class="num">02</span><span data-en>Competitions</span><span data-pt>Concursos</span></a>
+      <a href="#" data-goto="bio" class="menu-link"><span class="num">03</span><span data-en>Biography</span><span data-pt>Biografia</span></a>
+      <a href="#" data-goto="performances" class="menu-link"><span class="num">04</span><span data-en>Repertoire</span><span data-pt>Repertório</span></a>
+      <a href="#" data-goto="videos" class="menu-link"><span class="num">05</span><span data-en>Watch &amp; Listen</span><span data-pt>Ver e Ouvir</span></a>
+      <a href="#" data-goto="pitch" class="menu-link"><span class="num">06</span><span data-en>For Agents &amp; Producers</span><span data-pt>Para Agentes e Produtoras</span></a>
+      <a href="#" data-goto="gallery" class="menu-link"><span class="num">07</span><span data-en>Gallery</span><span data-pt>Galeria</span></a>
+      <a href="#" data-goto="credentials" class="menu-link"><span class="num">08</span><span data-en>Credentials</span><span data-pt>Credenciais</span></a>
+      <a href="#" data-goto="contact" class="menu-link"><span class="num">09</span><span data-en>Contact</span><span data-pt>Contacto</span></a>
+    </nav>
+    <div class="menu-side">
+      <div class="eyebrow" data-en>Booking &amp; Representation</div>
+      <div class="eyebrow" data-pt>Contratação e Representação</div>
+      <h4 data-en>Available for the 2026/27 Season</h4>
+      <h4 data-pt>Disponível para a Temporada 2026/27</h4>
+      <p data-en>International opera engagements, recitals, and concert appearances across Portugal, the United States, the United Kingdom, Italy and Spain.</p>
+      <p data-pt>Contratos internacionais de ópera, recitais e concertos em Portugal, Estados Unidos, Reino Unido, Itália e Espanha.</p>
+      <a href="mailto:paulamornadoria@gmail.com" class="menu-contact-item">paulamornadoria@gmail.com</a>
+      <a href="https://www.instagram.com/doriattitude" target="_blank" rel="noopener" class="menu-contact-item">@doriattitude</a>
+      <a href="https://www.youtube.com/@paulamornadoria1236" target="_blank" rel="noopener" class="menu-contact-item">YouTube — @paulamornadoria1236</a>
+      <a href="https://operabase.com/paula-doria-a23529/pt" target="_blank" rel="noopener" class="menu-contact-item" data-en>Operabase Profile →</a>
+      <a href="https://operabase.com/paula-doria-a23529/pt" target="_blank" rel="noopener" class="menu-contact-item" data-pt>Perfil no Operabase →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+
+
+<!-- ═══════════════ GOLD RIBBON TICKER ═══════════════ -->
+<div class="ribbon" aria-hidden="true"><div class="ribbon-track" id="ribbon-track"></div></div>
+
+<!-- ═══════════════ COMPETITIONS / AWARDS ═══════════════ -->
+
+
+<!-- ═══════════════ COMPETITIONS DETAIL PAGE (toggle view) ═══════════════ -->
+
+
+<!-- ═══════════════ BIOGRAPHY ═══════════════ -->
+
+
+<!-- ═══════════════ PERFORMANCES / REPERTOIRE ═══════════════ -->
+
+
+<!-- ═══════════════ VIDEOS — WATCH & LISTEN ═══════════════ -->
+
+
+<!-- ═══════════════ PITCH — PRESS KIT / REPRESENTATION (High Impact) ═══════════════ -->
+
+
+<!-- ═══════════════ GALLERY ═══════════════ -->
+
+
+<!-- ═══════════════ CREDENTIALS / CERTIFICATES ═══════════════ -->
+
+
+<!-- ═══════════════ CONTACT ═══════════════ -->
+
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+
+
+<div class="page on" id="page-home" data-page="hero">
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow"><span class="line"></span><span data-en>International Opera Soprano</span><span data-pt>Soprano Lírica Internacional</span></div>
+    <h1 data-en>Paula Morna<br><em>Dória</em></h1>
+    <h1 data-pt>Paula Morna<br><em>Dória</em></h1>
+    <p class="hero-sub" data-en>D.M.A., Rutgers University. Winner of the NYMA 2026 Grand Prize for Opera. A voice shaped on the great stages of Lincoln Center, Carnegie Weill Hall and the Teatro Nacional de São Carlos — now available for opera engagements across Europe and the United States.</p>
+    <p class="hero-sub" data-pt>Doutorada (D.M.A.) pela Rutgers University. Vencedora do Grande Prémio NYMA 2026 de Ópera. Uma voz formada nos grandes palcos do Lincoln Center, Carnegie Weill Hall e Teatro Nacional de São Carlos — disponível para contratos de ópera na Europa e nos Estados Unidos.</p>
+    <div class="hero-ctas">
+      <a href="#" data-goto="pitch" class="btn btn-gold"><span data-en>Booking Enquiries</span><span data-pt>Pedidos de Contratação</span></a>
+      <a href="#" data-goto="awards" class="btn btn-outline"><span data-en>View Competitions</span><span data-pt>Ver Concursos</span></a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">5</div><div class="stat-label" data-en>International Awards</div><div class="stat-label" data-pt>Prémios Internacionais</div></div>
+      <div><div class="stat-num">25+</div><div class="stat-label" data-en>Years on Stage</div><div class="stat-label" data-pt>Anos de Palco</div></div>
+      <div><div class="stat-num">5</div><div class="stat-label" data-en>Countries — PT · US · UK · IT · ES</div><div class="stat-label" data-pt>Países — PT · EUA · UK · IT · ES</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="assets/images/portrait_bw_close.jpg" alt="Paula Morna Dória, international opera soprano, studio portrait">
+    <div class="hero-ribbon-badge">
+      <div class="eyebrow">NYMA 2026</div>
+      <strong data-en>Grand Prize, Opera &amp; Platinum Professional</strong>
+      <strong data-pt>Grande Prémio de Ópera e Platina Profissional</strong>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="f-brand">Paula Morna Dória</div>
+        <p data-en>International opera soprano. D.M.A., Rutgers University. Available for engagements across Portugal, the United States, the United Kingdom, Italy and Spain.</p>
+        <p data-pt>Soprano lírica internacional. Doutorada pela Rutgers University. Disponível para contratos em Portugal, Estados Unidos, Reino Unido, Itália e Espanha.</p>
+      </div>
+      <div>
+        <h5 data-en>Navigate</h5><h5 data-pt>Navegação</h5>
+        <ul>
+          <li><a href="#" data-goto="awards" data-en>Competitions</a><a href="#" data-goto="awards" data-pt>Concursos</a></li>
+          <li><a href="#" data-goto="bio" data-en>Biography</a><a href="#" data-goto="bio" data-pt>Biografia</a></li>
+          <li><a href="#" data-goto="performances" data-en>Repertoire</a><a href="#" data-goto="performances" data-pt>Repertório</a></li>
+          <li><a href="#" data-goto="pitch" data-en>For Agents</a><a href="#" data-goto="pitch" data-pt>Para Agentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Connect</h5><h5 data-pt>Ligações</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/doriattitude" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@paulamornadoria1236" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://operabase.com/paula-doria-a23529/pt" target="_blank" rel="noopener">Operabase</a></li>
+          <li><a href="mailto:paulamornadoria@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Booking</h5><h5 data-pt>Contratação</h5>
+        <p data-en>For representation, recital programming, or season planning enquiries:</p>
+        <p data-pt>Para pedidos de representação, programação de recitais, ou planeamento de temporada:</p>
+        <p style="margin-top:10px;"><a href="mailto:paulamornadoria@gmail.com" style="color:var(--roselt);">paulamornadoria@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Paula Morna Dória. <span data-en>All rights reserved.</span><span data-pt>Todos os direitos reservados.</span></span>
+    <span data-en>Porto · Lisbon · New York</span>
+    <span data-pt>Porto · Lisboa · Nova Iorque</span>
+  </div>
+</footer>
+</div>
+
+<div class="page" id="page-awards" data-page="awards">
+<section id="awards" class="section-pad on-navy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="tag-row"><div class="line"></div><div class="eyebrow" data-en>Concursos · Competitions</div><div class="eyebrow" data-pt>Concursos</div></div>
+      <h2 data-en>Recent International Recognition</h2>
+      <h2 data-pt>Reconhecimento Internacional Recente</h2>
+      <p data-en>From New York to Lugano, Paula Morna Dória's voice has been distinguished by some of the most respected vocal competitions in the world. Select any award below to view full details and official documentation.</p>
+      <p data-pt>De Nova Iorque a Lugano, a voz de Paula Morna Dória tem sido distinguida por alguns dos concursos vocais mais respeitados do mundo. Selecione qualquer prémio para ver os detalhes completos e a documentação oficial.</p>
+    </div>
+
+    <div class="award-grid">
+      <div class="award-card reveal" data-open-comp="nyma">
+        <div class="award-img-wrap">
+          <img src="assets/images/nyma_cert.jpg" alt="NYMA New York Music Award 2026 certificate, Grand Prize Opera, Paula Morna Dória">
+          <div class="award-year">2026 · New York, USA</div>
+        </div>
+        <div class="award-body">
+          <h3>NYMA — New York Music Award</h3>
+          <div class="award-prize" data-en>Grand Prize, Opera &amp; Platinum Prize, Professional</div>
+          <div class="award-prize" data-pt>Grande Prémio de Ópera e Prémio Platina Profissional</div>
+          <div class="award-place" data-en>New York, United States</div>
+          <div class="award-place" data-pt>Nova Iorque, Estados Unidos</div>
+          <div class="view-link"><span data-en>View Certificate</span><span data-pt>Ver Certificado</span> →</div>
+        </div>
+      </div>
+
+      <div class="award-card reveal d1" data-open-comp="voicewinners">
+        <div class="award-img-wrap">
+          <img src="assets/images/voicewinners_cert.jpg" alt="Voice Winners 2025 Gold Prize official results, Paula Morna Dória">
+          <div class="award-year">2025</div>
+        </div>
+        <div class="award-body">
+          <h3>Voice Winners</h3>
+          <div class="award-prize" data-en>Gold Prize, Professional Category</div>
+          <div class="award-prize" data-pt>Prémio de Ouro, Categoria Profissional</div>
+          <div class="award-place" data-en>International Online Vocal Competition</div>
+          <div class="award-place" data-pt>Concurso Vocal Internacional</div>
+          <div class="view-link"><span data-en>View Certificate</span><span data-pt>Ver Certificado</span> →</div>
+        </div>
+      </div>
+
+      <div class="award-card reveal d2" data-open-comp="tizziano">
+        <div class="award-img-wrap">
+          <img src="assets/images/duet.jpg" alt="Paula Morna Dória performing opera repertoire in concert">
+          <div class="award-year">2024 · Lugano, Switzerland</div>
+        </div>
+        <div class="award-body">
+          <h3>Tizziano Rosetti Competition</h3>
+          <div class="award-prize" data-en>First Prize, Opera Singer</div>
+          <div class="award-prize" data-pt>1º Prémio, Cantora de Ópera</div>
+          <div class="award-place" data-en>Lugano, Switzerland</div>
+          <div class="award-place" data-pt>Lugano, Suíça</div>
+          <div class="view-link"><span data-en>View Details</span><span data-pt>Ver Detalhes</span> →</div>
+        </div>
+      </div>
+
+      <div class="award-card reveal d3" data-open-comp="bellini">
+        <div class="award-img-wrap">
+          <img src="assets/images/portrait_purple_curtain.jpg" alt="Paula Morna Dória editorial portrait, Bellini International Vocal Competition winner">
+          <div class="award-year">2003 · Ragusa, Italy</div>
+        </div>
+        <div class="award-body">
+          <h3>Bellini International Vocal Competition</h3>
+          <div class="award-prize" data-en>Best Chamber Music Singer</div>
+          <div class="award-prize" data-pt>Melhor Cantora de Música de Câmara</div>
+          <div class="award-place" data-en>Ragusa, Italy — led to Carnegie Weill Hall debut, 2004</div>
+          <div class="award-place" data-pt>Ragusa, Itália — resultou em debut no Carnegie Weill Hall, 2004</div>
+          <div class="view-link"><span data-en>View Details</span><span data-pt>Ver Detalhes</span> →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="competitions-detail" class="section-pad">
+  <div class="wrap">
+    <div class="tag-row reveal"><div class="line"></div><div class="eyebrow" data-en>Concursos · Full Record</div><div class="eyebrow" data-pt>Concursos · Registo Completo</div></div>
+    <h2 class="reveal" style="margin-bottom:50px;" data-en>Competitions &amp; Distinctions</h2>
+    <h2 class="reveal" style="margin-bottom:50px;" data-pt>Concursos e Distinções</h2>
+
+    <div id="comp-nyma" class="comp-detail-row">
+      <div class="comp-detail-img"><img src="assets/images/nyma_cert.jpg" alt="NYMA 2026 certificate"></div>
+      <div class="comp-detail-text">
+        <div class="eyebrow">2026 — New York, USA</div>
+        <h3>NYMA — New York Music Award</h3>
+        <div class="prize-line"><span data-en>Grand Prize</span><span data-pt>Grande Prémio</span> (Opera) &amp; <span data-en>Platinum Prize</span><span data-pt>Prémio Platina</span> (Professional)</div>
+        <p data-en>In 2026, Paula Morna Dória received the double distinction of Grand Prize in Opera and Platinum Prize in the Professional category from the New York Music Award — one of the most prestigious vocal honours awarded in the United States, marking her formal arrival on the American opera circuit.</p>
+        <p data-pt>Em 2026, Paula Morna Dória recebeu a dupla distinção de Grande Prémio de Ópera e Prémio Platina na categoria Profissional do New York Music Award — uma das mais prestigiadas honras vocais atribuídas nos Estados Unidos, marcando a sua chegada formal ao circuito de ópera norte-americano.</p>
+      </div>
+    </div>
+
+    <div id="comp-voicewinners" class="comp-detail-row reverse">
+      <div class="comp-detail-img"><img src="assets/images/voicewinners_cert.jpg" alt="Voice Winners 2025 certificate"></div>
+      <div class="comp-detail-text">
+        <div class="eyebrow">2025</div>
+        <h3>Voice Winners</h3>
+        <div class="prize-line"><span data-en>Gold Prize</span><span data-pt>Prémio de Ouro</span> — <span data-en>Professional Category</span><span data-pt>Categoria Profissional</span></div>
+        <p data-en>Selected among an international field of professional singers, Paula Morna Dória was awarded the Gold Prize in the Professional category of the Voice Winners competition, recognising the depth and maturity of her vocal artistry on the world stage.</p>
+        <p data-pt>Selecionada entre um leque internacional de cantores profissionais, Paula Morna Dória recebeu o Prémio de Ouro na categoria Profissional do concurso Voice Winners, reconhecendo a profundidade e maturidade da sua arte vocal no panorama mundial.</p>
+      </div>
+    </div>
+
+    <div id="comp-tizziano" class="comp-detail-row">
+      <div class="comp-detail-img"><img src="assets/images/orchestra.jpg" alt="Concert performance, orchestra and chorus on stage"></div>
+      <div class="comp-detail-text">
+        <div class="eyebrow">2024 — Lugano, Switzerland</div>
+        <h3>Tizziano Rosetti Competition</h3>
+        <div class="prize-line"><span data-en>First Prize</span><span data-pt>1º Prémio</span> — <span data-en>Opera Singer</span><span data-pt>Cantora de Ópera</span></div>
+        <p data-en>In Lugano, Switzerland, Paula Morna Dória won First Prize as an opera singer in the Tizziano Rosetti Competition, a distinction that led directly to a series of subsequent concert engagements with orchestra in Switzerland.</p>
+        <p data-pt>Em Lugano, na Suíça, Paula Morna Dória venceu o 1º Prémio como cantora de ópera no Concurso Tizziano Rosetti, uma distinção que conduziu diretamente a uma série de concertos subsequentes com orquestra na Suíça.</p>
+      </div>
+    </div>
+
+    <div id="comp-bellini" class="comp-detail-row reverse">
+      <div class="comp-detail-img"><img src="assets/images/audience.jpg" alt="Concert hall, full orchestra and audience"></div>
+      <div class="comp-detail-text">
+        <div class="eyebrow">2003 — Ragusa, Italy</div>
+        <h3>Bellini International Vocal Competition</h3>
+        <div class="prize-line"><span data-en>Best Chamber Music Singer</span><span data-pt>Melhor Cantora de Música de Câmara</span></div>
+        <p data-en>Winning this award in Ragusa, Italy, opened the door to Paula Morna Dória's American debut: in 2004, as a direct result of this prize, she made her debut at the Carnegie Weill Hall in New York — a milestone that would shape the international trajectory of her career, and led to her being represented by a New York agency and cited in the Musical America yearbook.</p>
+        <p data-pt>A vitória deste prémio em Ragusa, Itália, abriu a porta ao debut americano de Paula Morna Dória: em 2004, em resultado direto deste prémio, fez o seu debut no Carnegie Weill Hall em Nova Iorque — um marco que viria a moldar a trajetória internacional da sua carreira, e que a levou a ser agenciada por uma agência de Nova Iorque e citada no anuário Musical America.</p>
+      </div>
+    </div>
+
+    <a href="#" id="back-to-awards" class="back-to-site"><span data-en>← Back to Site</span><span data-pt>← Voltar ao Site</span></a>
+  </div>
+</div>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="f-brand">Paula Morna Dória</div>
+        <p data-en>International opera soprano. D.M.A., Rutgers University. Available for engagements across Portugal, the United States, the United Kingdom, Italy and Spain.</p>
+        <p data-pt>Soprano lírica internacional. Doutorada pela Rutgers University. Disponível para contratos em Portugal, Estados Unidos, Reino Unido, Itália e Espanha.</p>
+      </div>
+      <div>
+        <h5 data-en>Navigate</h5><h5 data-pt>Navegação</h5>
+        <ul>
+          <li><a href="#" data-goto="awards" data-en>Competitions</a><a href="#" data-goto="awards" data-pt>Concursos</a></li>
+          <li><a href="#" data-goto="bio" data-en>Biography</a><a href="#" data-goto="bio" data-pt>Biografia</a></li>
+          <li><a href="#" data-goto="performances" data-en>Repertoire</a><a href="#" data-goto="performances" data-pt>Repertório</a></li>
+          <li><a href="#" data-goto="pitch" data-en>For Agents</a><a href="#" data-goto="pitch" data-pt>Para Agentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Connect</h5><h5 data-pt>Ligações</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/doriattitude" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@paulamornadoria1236" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://operabase.com/paula-doria-a23529/pt" target="_blank" rel="noopener">Operabase</a></li>
+          <li><a href="mailto:paulamornadoria@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Booking</h5><h5 data-pt>Contratação</h5>
+        <p data-en>For representation, recital programming, or season planning enquiries:</p>
+        <p data-pt>Para pedidos de representação, programação de recitais, ou planeamento de temporada:</p>
+        <p style="margin-top:10px;"><a href="mailto:paulamornadoria@gmail.com" style="color:var(--roselt);">paulamornadoria@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Paula Morna Dória. <span data-en>All rights reserved.</span><span data-pt>Todos os direitos reservados.</span></span>
+    <span data-en>Porto · Lisbon · New York</span>
+    <span data-pt>Porto · Lisboa · Nova Iorque</span>
+  </div>
+</footer>
+</div>
+
+<div class="page" id="page-bio" data-page="bio">
+<section id="bio" class="section-pad">
+  <div class="wrap">
+    <div class="bio-layout">
+      <div class="bio-photo-stack reveal">
+        <div class="gold-frame"></div>
+        <div class="ph1"><img src="assets/images/portrait_purple_curtain.jpg" alt="Paula Morna Dória in performance gown, full length studio portrait"></div>
+        <div class="ph2"><img src="assets/images/portrait_bw_chiffon.jpg" alt="Paula Morna Dória, black and white close studio portrait"></div>
+      </div>
+      <div class="bio-text reveal">
+        <div class="tag-row"><div class="line"></div><div class="eyebrow" data-en>Biography</div><div class="eyebrow" data-pt>Biografia</div></div>
+        <h2 style="margin-bottom:24px;" data-en>A Voice Forged Between Continents</h2>
+        <h2 style="margin-bottom:24px;" data-pt>Uma Voz Forjada Entre Continentes</h2>
+
+        <p data-en>Born and trained in Porto, Portugal, <strong>Paula Morna Dória</strong> holds a Doctor of Musical Arts in Vocal Performance from <strong>Rutgers University</strong>, New Jersey, where she studied under the guidance of the legendary Virginia Zeani and Klara Barlow. Her doctoral research on Berlioz's <em>Les Nuits d'Été</em> was defended with the highest distinction.</p>
+        <p data-pt>Nascida e formada no Porto, <strong>Paula Morna Dória</strong> é Doutorada em Artes Musicais (Vocal Performance) pela <strong>Rutgers University</strong>, Nova Jérsia, onde estudou sob a orientação das legendárias Virginia Zeani e Klara Barlow. A sua investigação de doutoramento sobre "Les Nuits d'Été" de Berlioz foi defendida com a mais alta distinção.</p>
+
+        <p data-en>Across more than two decades, her voice has filled rooms as storied as the <strong>Lincoln Center</strong> and <strong>Carnegie Weill Hall</strong> in New York, the <strong>Teatro Nacional de São Carlos</strong> in Lisbon, the <strong>Casa da Música</strong> in Porto, and the <strong>Centro Cultural de Belém</strong> — under the baton of conductors including <strong>Lawrence Foster</strong>, <strong>Donato Renzetti</strong>, and <strong>Frédérique Chaslin</strong>.</p>
+        <p data-pt>Ao longo de mais de duas décadas, a sua voz preencheu salas tão emblemáticas como o <strong>Lincoln Center</strong> e o <strong>Carnegie Weill Hall</strong> em Nova Iorque, o <strong>Teatro Nacional de São Carlos</strong> em Lisboa, a <strong>Casa da Música</strong> no Porto, e o <strong>Centro Cultural de Belém</strong> — sob a direção de maestros como <strong>Lawrence Foster</strong>, <strong>Donato Renzetti</strong> e <strong>Frédérique Chaslin</strong>.</p>
+
+        <p data-en>Her artistry has been refined through masterclasses and direct mentorship with some of opera's most distinguished figures — including Fiorenza Cossotto, Fiorenza Cedolins, Viorica Cortez, and Giancarlo Monsalve — a lineage of teaching that places her firmly within an unbroken tradition of bel canto excellence.</p>
+        <p data-pt>A sua arte foi refinada através de masterclasses e mentoria direta com algumas das figuras mais distintas da ópera — incluindo Fiorenza Cossotto, Fiorenza Cedolins, Viorica Cortez e Giancarlo Monsalve — uma linhagem de ensino que a coloca firmemente numa tradição ininterrupta de excelência do bel canto.</p>
+
+        <div class="bio-credentials">
+          <div class="cred-item">
+            <div class="cred-label" data-en>Doctorate</div><div class="cred-label" data-pt>Doutoramento</div>
+            <div class="cred-value">D.M.A., Rutgers University (2011)</div>
+          </div>
+          <div class="cred-item">
+            <div class="cred-label" data-en>Voice Type</div><div class="cred-label" data-pt>Tipo de Voz</div>
+            <div class="cred-value" data-en>Soprano / Contralto repertoire</div>
+            <div class="cred-value" data-pt>Repertório de Soprano / Contralto</div>
+          </div>
+          <div class="cred-item">
+            <div class="cred-label" data-en>Languages</div><div class="cred-label" data-pt>Línguas</div>
+            <div class="cred-value" data-en>Portuguese, English, Italian, French</div>
+            <div class="cred-value" data-pt>Português, Inglês, Italiano, Francês</div>
+          </div>
+          <div class="cred-item">
+            <div class="cred-label" data-en>Based In</div><div class="cred-label" data-pt>Baseada em</div>
+            <div class="cred-value" data-en>Porto, Portugal</div>
+            <div class="cred-value" data-pt>Porto, Portugal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="f-brand">Paula Morna Dória</div>
+        <p data-en>International opera soprano. D.M.A., Rutgers University. Available for engagements across Portugal, the United States, the United Kingdom, Italy and Spain.</p>
+        <p data-pt>Soprano lírica internacional. Doutorada pela Rutgers University. Disponível para contratos em Portugal, Estados Unidos, Reino Unido, Itália e Espanha.</p>
+      </div>
+      <div>
+        <h5 data-en>Navigate</h5><h5 data-pt>Navegação</h5>
+        <ul>
+          <li><a href="#" data-goto="awards" data-en>Competitions</a><a href="#" data-goto="awards" data-pt>Concursos</a></li>
+          <li><a href="#" data-goto="bio" data-en>Biography</a><a href="#" data-goto="bio" data-pt>Biografia</a></li>
+          <li><a href="#" data-goto="performances" data-en>Repertoire</a><a href="#" data-goto="performances" data-pt>Repertório</a></li>
+          <li><a href="#" data-goto="pitch" data-en>For Agents</a><a href="#" data-goto="pitch" data-pt>Para Agentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Connect</h5><h5 data-pt>Ligações</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/doriattitude" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@paulamornadoria1236" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://operabase.com/paula-doria-a23529/pt" target="_blank" rel="noopener">Operabase</a></li>
+          <li><a href="mailto:paulamornadoria@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Booking</h5><h5 data-pt>Contratação</h5>
+        <p data-en>For representation, recital programming, or season planning enquiries:</p>
+        <p data-pt>Para pedidos de representação, programação de recitais, ou planeamento de temporada:</p>
+        <p style="margin-top:10px;"><a href="mailto:paulamornadoria@gmail.com" style="color:var(--roselt);">paulamornadoria@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Paula Morna Dória. <span data-en>All rights reserved.</span><span data-pt>Todos os direitos reservados.</span></span>
+    <span data-en>Porto · Lisbon · New York</span>
+    <span data-pt>Porto · Lisboa · Nova Iorque</span>
+  </div>
+</footer>
+</div>
+
+<div class="page" id="page-performances" data-page="performances">
+<section id="performances" class="section-pad on-navy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="tag-row"><div class="line"></div><div class="eyebrow" data-en>Repertoire</div><div class="eyebrow" data-pt>Repertório</div></div>
+      <h2 data-en>Roles &amp; Engagements</h2>
+      <h2 data-pt>Papéis e Compromissos</h2>
+      <p data-en>A selection of principal roles and concert engagements across major opera houses and orchestras in Europe and the United States.</p>
+      <p data-pt>Uma seleção de papéis principais e compromissos de concerto em importantes casas de ópera e orquestras na Europa e nos Estados Unidos.</p>
+    </div>
+  </div>
+  <div class="perf-grid">
+    <div class="perf-card reveal"><div class="perf-num">01</div><div><div class="perf-role">Bizet</div><div class="perf-work">Carmen <span style="font-size:1rem;color:var(--rose);">— Mercedes</span></div><div class="perf-meta" data-en>Teatro Nacional de São Carlos, dir. Frédérique Chaslin</div><div class="perf-meta" data-pt>Teatro Nacional de São Carlos, dir. Frédérique Chaslin</div></div></div>
+    <div class="perf-card reveal"><div class="perf-num">02</div><div><div class="perf-role">Verdi</div><div class="perf-work">Otello <span style="font-size:1rem;color:var(--rose);">— Emilia</span></div><div class="perf-meta" data-en>Teatro Nacional de São Carlos, 2005/2006 season</div><div class="perf-meta" data-pt>Teatro Nacional de São Carlos, temporada 2005/2006</div></div></div>
+    <div class="perf-card reveal"><div class="perf-num">03</div><div><div class="perf-role">Tchaikovsky</div><div class="perf-work">Eugene Onegin <span style="font-size:1rem;color:var(--rose);">— Madame Larina</span></div><div class="perf-meta" data-en>Gulbenkian Orchestra &amp; Choir, dir. Lawrence Foster</div><div class="perf-meta" data-pt>Orquestra e Coro Gulbenkian, dir. Lawrence Foster</div></div></div>
+    <div class="perf-card reveal"><div class="perf-num">04</div><div><div class="perf-role">Wagner</div><div class="perf-work">Die Walküre <span style="font-size:1rem;color:var(--rose);">— Grimgerde</span></div><div class="perf-meta" data-en>Teatro Nacional de São Carlos / CCB / Coliseu do Porto</div><div class="perf-meta" data-pt>Teatro Nacional de São Carlos / CCB / Coliseu do Porto</div></div></div>
+    <div class="perf-card reveal"><div class="perf-num">05</div><div><div class="perf-role">R. Strauss</div><div class="perf-work">Elektra <span style="font-size:1rem;color:var(--rose);">— Second Maid</span></div><div class="perf-meta" data-en>Centro Cultural de Belém, dir. Leo Hussain, for TNSC</div><div class="perf-meta" data-pt>Centro Cultural de Belém, dir. Leo Hussain, para o TNSC</div></div></div>
+    <div class="perf-card reveal"><div class="perf-num">06</div><div><div class="perf-role">Britten</div><div class="perf-work">The Turn of the Screw <span style="font-size:1rem;color:var(--rose);">— Mrs. Grose</span></div><div class="perf-meta" data-en>Centro Cultural de Belém, dir. Cameron Burns, 2023</div><div class="perf-meta" data-pt>Centro Cultural de Belém, dir. Cameron Burns, 2023</div></div></div>
+    <div class="perf-card reveal"><div class="perf-num">07</div><div><div class="perf-role">Rossini</div><div class="perf-work">L'Italiana in Algeri <span style="font-size:1rem;color:var(--rose);">— Zulma</span></div><div class="perf-meta" data-en>Teatro Nacional de São Carlos, dir. Donato Renzetti</div><div class="perf-meta" data-pt>Teatro Nacional de São Carlos, dir. Donato Renzetti</div></div></div>
+    <div class="perf-card reveal"><div class="perf-num">08</div><div><div class="perf-role">Shostakovich</div><div class="perf-work" data-en>The Nose <span style="font-size:1rem;color:var(--rose);">— Madame Podtotchina</span></div><div class="perf-work" data-pt>O Nariz <span style="font-size:1rem;color:var(--rose);">— Madame Podtotchina</span></div><div class="perf-meta" data-en>Teatro Nacional de São Carlos, dir. Donato Renzetti</div><div class="perf-meta" data-pt>Teatro Nacional de São Carlos, dir. Donato Renzetti</div></div></div>
+    <div class="perf-card reveal"><div class="perf-num">09</div><div><div class="perf-role">Beethoven</div><div class="perf-work" data-en>Symphony No. 9 <span style="font-size:1rem;color:var(--rose);">— Solo</span></div><div class="perf-work" data-pt>9ª Sinfonia <span style="font-size:1rem;color:var(--rose);">— Solo</span></div><div class="perf-meta" data-en>Avery Fisher Hall, Lincoln Center, New York</div><div class="perf-meta" data-pt>Avery Fisher Hall, Lincoln Center, Nova Iorque</div></div></div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="f-brand">Paula Morna Dória</div>
+        <p data-en>International opera soprano. D.M.A., Rutgers University. Available for engagements across Portugal, the United States, the United Kingdom, Italy and Spain.</p>
+        <p data-pt>Soprano lírica internacional. Doutorada pela Rutgers University. Disponível para contratos em Portugal, Estados Unidos, Reino Unido, Itália e Espanha.</p>
+      </div>
+      <div>
+        <h5 data-en>Navigate</h5><h5 data-pt>Navegação</h5>
+        <ul>
+          <li><a href="#" data-goto="awards" data-en>Competitions</a><a href="#" data-goto="awards" data-pt>Concursos</a></li>
+          <li><a href="#" data-goto="bio" data-en>Biography</a><a href="#" data-goto="bio" data-pt>Biografia</a></li>
+          <li><a href="#" data-goto="performances" data-en>Repertoire</a><a href="#" data-goto="performances" data-pt>Repertório</a></li>
+          <li><a href="#" data-goto="pitch" data-en>For Agents</a><a href="#" data-goto="pitch" data-pt>Para Agentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Connect</h5><h5 data-pt>Ligações</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/doriattitude" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@paulamornadoria1236" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://operabase.com/paula-doria-a23529/pt" target="_blank" rel="noopener">Operabase</a></li>
+          <li><a href="mailto:paulamornadoria@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Booking</h5><h5 data-pt>Contratação</h5>
+        <p data-en>For representation, recital programming, or season planning enquiries:</p>
+        <p data-pt>Para pedidos de representação, programação de recitais, ou planeamento de temporada:</p>
+        <p style="margin-top:10px;"><a href="mailto:paulamornadoria@gmail.com" style="color:var(--roselt);">paulamornadoria@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Paula Morna Dória. <span data-en>All rights reserved.</span><span data-pt>Todos os direitos reservados.</span></span>
+    <span data-en>Porto · Lisbon · New York</span>
+    <span data-pt>Porto · Lisboa · Nova Iorque</span>
+  </div>
+</footer>
+</div>
+
+<div class="page" id="page-videos" data-page="videos">
+<section id="videos" class="section-pad">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="tag-row"><div class="line"></div><div class="eyebrow" data-en>Watch &amp; Listen</div><div class="eyebrow" data-pt>Ver e Ouvir</div></div>
+      <h2 data-en>In Performance</h2>
+      <h2 data-pt>Em Performance</h2>
+      <p data-en>A selection of recorded performances showcasing the lyrical depth, dramatic range and technical control central to Paula Morna Dória's artistry. Watch directly here — no need to leave the page.</p>
+      <p data-pt>Uma seleção de atuações gravadas que evidenciam a profundidade lírica, o alcance dramático e o controlo técnico centrais à arte de Paula Morna Dória. Veja diretamente aqui — sem necessidade de saltar para o YouTube.</p>
+    </div>
+
+    <div class="featured-video reveal">
+      <div class="featured-video-frame">
+        <video id="featured-video-el" controls preload="metadata" poster="assets/images/la-tombe-poster.jpg" playsinline>
+          <source src="assets/video/la-tombe-et-la-rose.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="featured-video-cap">
+        <div class="fv-title" data-en>Liszt — "La Tombe et la Rose" (Victor Hugo)</div>
+        <div class="fv-title" data-pt>Liszt — "La Tombe et la Rose" (Victor Hugo)</div>
+        <div class="fv-sub" data-en>Chamber recital — Paula Morna Dória, soprano</div>
+        <div class="fv-sub" data-pt>Recital de música de câmara — Paula Morna Dória, soprano</div>
+      </div>
+    </div>
+
+    <div class="yt-grid">
+      <div class="yt-card reveal">
+        <div class="yt-frame">
+          <div class="yt-poster" data-poster style="background-image:url('https://img.youtube.com/vi/HLc1oFQMPbw/hqdefault.jpg');">
+            <div class="yt-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          </div>
+          <iframe data-yt data-src="https://www.youtube.com/embed/HLc1oFQMPbw?rel=0&amp;modestbranding=1" title="Paula Morna Dória — Opera Performance I" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="yt-cap">
+          <div class="yt-cap-title" data-en>In Performance — I</div>
+          <div class="yt-cap-title" data-pt>Em Atuação — I</div>
+          <div class="yt-cap-sub" data-en>Paula Morna Dória — Opera Soprano</div>
+          <div class="yt-cap-sub" data-pt>Paula Morna Dória — Soprano Lírica</div>
+        </div>
+      </div>
+
+      <div class="yt-card reveal d1">
+        <div class="yt-frame">
+          <div class="yt-poster" data-poster style="background-image:url('https://img.youtube.com/vi/qIl1p-RK_J0/hqdefault.jpg');">
+            <div class="yt-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          </div>
+          <iframe data-yt data-src="https://www.youtube.com/embed/qIl1p-RK_J0?rel=0&amp;modestbranding=1" title="Paula Morna Dória — Opera Performance II" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="yt-cap">
+          <div class="yt-cap-title" data-en>In Performance — II</div>
+          <div class="yt-cap-title" data-pt>Em Atuação — II</div>
+          <div class="yt-cap-sub" data-en>Paula Morna Dória — Opera Soprano</div>
+          <div class="yt-cap-sub" data-pt>Paula Morna Dória — Soprano Lírica</div>
+        </div>
+      </div>
+
+      <div class="yt-card reveal d2">
+        <div class="yt-frame">
+          <div class="yt-poster" data-poster style="background-image:url('https://img.youtube.com/vi/DD6A1vtu27Q/hqdefault.jpg');">
+            <div class="yt-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          </div>
+          <iframe data-yt data-src="https://www.youtube.com/embed/DD6A1vtu27Q?rel=0&amp;modestbranding=1" title="Paula Morna Dória — Opera Performance III" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="yt-cap">
+          <div class="yt-cap-title" data-en>In Performance — III</div>
+          <div class="yt-cap-title" data-pt>Em Atuação — III</div>
+          <div class="yt-cap-sub" data-en>Paula Morna Dória — Opera Soprano</div>
+          <div class="yt-cap-sub" data-pt>Paula Morna Dória — Soprano Lírica</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="yt-cta-row reveal">
+      <a href="https://www.youtube.com/@paulamornadoria1236" target="_blank" rel="noopener" class="btn btn-gold">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#1a1006"><path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
+        <span data-en>Subscribe on Official YouTube Channel</span>
+        <span data-pt>Subscreva o Canal Oficial no YouTube</span>
+      </a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="f-brand">Paula Morna Dória</div>
+        <p data-en>International opera soprano. D.M.A., Rutgers University. Available for engagements across Portugal, the United States, the United Kingdom, Italy and Spain.</p>
+        <p data-pt>Soprano lírica internacional. Doutorada pela Rutgers University. Disponível para contratos em Portugal, Estados Unidos, Reino Unido, Itália e Espanha.</p>
+      </div>
+      <div>
+        <h5 data-en>Navigate</h5><h5 data-pt>Navegação</h5>
+        <ul>
+          <li><a href="#" data-goto="awards" data-en>Competitions</a><a href="#" data-goto="awards" data-pt>Concursos</a></li>
+          <li><a href="#" data-goto="bio" data-en>Biography</a><a href="#" data-goto="bio" data-pt>Biografia</a></li>
+          <li><a href="#" data-goto="performances" data-en>Repertoire</a><a href="#" data-goto="performances" data-pt>Repertório</a></li>
+          <li><a href="#" data-goto="pitch" data-en>For Agents</a><a href="#" data-goto="pitch" data-pt>Para Agentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Connect</h5><h5 data-pt>Ligações</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/doriattitude" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@paulamornadoria1236" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://operabase.com/paula-doria-a23529/pt" target="_blank" rel="noopener">Operabase</a></li>
+          <li><a href="mailto:paulamornadoria@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Booking</h5><h5 data-pt>Contratação</h5>
+        <p data-en>For representation, recital programming, or season planning enquiries:</p>
+        <p data-pt>Para pedidos de representação, programação de recitais, ou planeamento de temporada:</p>
+        <p style="margin-top:10px;"><a href="mailto:paulamornadoria@gmail.com" style="color:var(--roselt);">paulamornadoria@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Paula Morna Dória. <span data-en>All rights reserved.</span><span data-pt>Todos os direitos reservados.</span></span>
+    <span data-en>Porto · Lisbon · New York</span>
+    <span data-pt>Porto · Lisboa · Nova Iorque</span>
+  </div>
+</footer>
+</div>
+
+<div class="page" id="page-pitch" data-page="pitch">
+<section id="pitch" class="section-pad">
+  <div class="wrap">
+    <div class="pitch-header reveal">
+      <div class="tag-row" style="justify-content:center;"><div class="line"></div><div class="eyebrow" data-en>For Agents, Producers &amp; Labels</div><div class="eyebrow" data-pt>Para Agentes, Produtoras e Editoras</div></div>
+      <h2 data-en>Press Kit &amp; Representation</h2>
+      <h2 data-pt>Press Kit e Representação</h2>
+      <p data-en>A complete professional overview for opera agencies, festival and house producers, and classical recording labels evaluating Paula Morna Dória for engagement, representation, or recording projects.</p>
+      <p data-pt>Uma visão profissional completa para agências de ópera, produtores de festivais e casas de espetáculo, e editoras discográficas de música clássica que avaliem Paula Morna Dória para contratação, representação ou projetos discográficos.</p>
+    </div>
+
+    <div class="onesheet reveal">
+      <div class="onesheet-photo">
+        <img src="assets/images/portrait_purple_standing.jpg" alt="Paula Morna Dória press photograph">
+        <div class="badge">
+          <div class="b-title">Paula Morna Dória</div>
+          <div class="b-sub" data-en>Opera Soprano · D.M.A.</div>
+          <div class="b-sub" data-pt>Soprano Lírica · Doutorada</div>
+        </div>
+      </div>
+      <div class="onesheet-content">
+
+        <div class="os-block">
+          <div class="os-label" data-en>Snapshot</div><div class="os-label" data-pt>Resumo</div>
+          <div class="os-grid2">
+            <div>
+              <p data-en><strong style="color:var(--cream);">Voice type:</strong> Soprano / Contralto repertoire</p>
+              <p data-pt><strong style="color:var(--cream);">Tipo de voz:</strong> Repertório de Soprano / Contralto</p>
+              <p data-en><strong style="color:var(--cream);">Based:</strong> Porto, Portugal</p>
+              <p data-pt><strong style="color:var(--cream);">Baseada em:</strong> Porto, Portugal</p>
+            </div>
+            <div>
+              <p data-en><strong style="color:var(--cream);">Available for:</strong> PT · USA · UK · Italy · Spain</p>
+              <p data-pt><strong style="color:var(--cream);">Disponível para:</strong> PT · EUA · UK · Itália · Espanha</p>
+              <p data-en><strong style="color:var(--cream);">Languages:</strong> PT, EN, IT, FR</p>
+              <p data-pt><strong style="color:var(--cream);">Línguas:</strong> PT, EN, IT, FR</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="os-divider"></div>
+
+        <div class="os-block">
+          <div class="os-label" data-en>Most Recent Honours</div><div class="os-label" data-pt>Distinções Mais Recentes</div>
+          <ul>
+            <li data-en>NYMA 2026 — Grand Prize, Opera &amp; Platinum Prize, Professional (New York)</li>
+            <li data-pt>NYMA 2026 — Grande Prémio de Ópera e Prémio Platina Profissional (Nova Iorque)</li>
+            <li data-en>Voice Winners 2025 — Gold Prize, Professional</li>
+            <li data-pt>Voice Winners 2025 — Prémio de Ouro, Profissional</li>
+            <li data-en>Tizziano Rosetti Competition 2024 — First Prize (Lugano, Switzerland)</li>
+            <li data-pt>Concurso Tizziano Rosetti 2024 — 1º Prémio (Lugano, Suíça)</li>
+          </ul>
+        </div>
+
+        <div class="os-divider"></div>
+
+        <div class="os-block">
+          <div class="os-label" data-en>Signature Venues &amp; Conductors</div><div class="os-label" data-pt>Salas e Maestros de Referência</div>
+          <p data-en>Lincoln Center &amp; Carnegie Weill Hall (New York) · Teatro Nacional de São Carlos (Lisbon) · Casa da Música (Porto) · Centro Cultural de Belém — under conductors Lawrence Foster, Donato Renzetti, and Frédérique Chaslin.</p>
+          <p data-pt>Lincoln Center e Carnegie Weill Hall (Nova Iorque) · Teatro Nacional de São Carlos (Lisboa) · Casa da Música (Porto) · Centro Cultural de Belém — sob a direção dos maestros Lawrence Foster, Donato Renzetti e Frédérique Chaslin.</p>
+        </div>
+
+        <div class="os-divider"></div>
+
+        <div class="os-block">
+          <div class="os-label" data-en>Why Engage Paula Morna Dória</div><div class="os-label" data-pt>Porquê Contratar Paula Morna Dória</div>
+          <ul>
+            <li data-en>D.M.A. in Vocal Performance, Rutgers University — rigorous, internationally validated training</li>
+            <li data-pt>Doutoramento em Vocal Performance pela Rutgers University — formação rigorosa e validada internacionalmente</li>
+            <li data-en>Proven competition record across the US and Europe, with awards in 2024, 2025 and 2026</li>
+            <li data-pt>Histórico comprovado em concursos nos EUA e Europa, com prémios em 2024, 2025 e 2026</li>
+            <li data-en>Fluent stage experience in French, Italian, Russian and German repertoire</li>
+            <li data-pt>Experiência de palco fluente em repertório francês, italiano, russo e alemão</li>
+            <li data-en>Direct mentorship lineage from Virginia Zeani, Fiorenza Cossotto, and Fiorenza Cedolins</li>
+            <li data-pt>Linhagem de mentoria direta de Virginia Zeani, Fiorenza Cossotto e Fiorenza Cedolins</li>
+          </ul>
+        </div>
+
+        <div class="os-divider"></div>
+
+        <div class="os-cta-row">
+          <a href="#" data-goto="contact" class="btn btn-gold"><span data-en>Request Full Press Kit</span><span data-pt>Solicitar Press Kit Completo</span></a>
+          <a href="https://operabase.com/paula-doria-a23529/pt" target="_blank" rel="noopener" class="btn btn-outline"><span data-en>View Operabase Profile</span><span data-pt>Ver Perfil no Operabase</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="f-brand">Paula Morna Dória</div>
+        <p data-en>International opera soprano. D.M.A., Rutgers University. Available for engagements across Portugal, the United States, the United Kingdom, Italy and Spain.</p>
+        <p data-pt>Soprano lírica internacional. Doutorada pela Rutgers University. Disponível para contratos em Portugal, Estados Unidos, Reino Unido, Itália e Espanha.</p>
+      </div>
+      <div>
+        <h5 data-en>Navigate</h5><h5 data-pt>Navegação</h5>
+        <ul>
+          <li><a href="#" data-goto="awards" data-en>Competitions</a><a href="#" data-goto="awards" data-pt>Concursos</a></li>
+          <li><a href="#" data-goto="bio" data-en>Biography</a><a href="#" data-goto="bio" data-pt>Biografia</a></li>
+          <li><a href="#" data-goto="performances" data-en>Repertoire</a><a href="#" data-goto="performances" data-pt>Repertório</a></li>
+          <li><a href="#" data-goto="pitch" data-en>For Agents</a><a href="#" data-goto="pitch" data-pt>Para Agentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Connect</h5><h5 data-pt>Ligações</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/doriattitude" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@paulamornadoria1236" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://operabase.com/paula-doria-a23529/pt" target="_blank" rel="noopener">Operabase</a></li>
+          <li><a href="mailto:paulamornadoria@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Booking</h5><h5 data-pt>Contratação</h5>
+        <p data-en>For representation, recital programming, or season planning enquiries:</p>
+        <p data-pt>Para pedidos de representação, programação de recitais, ou planeamento de temporada:</p>
+        <p style="margin-top:10px;"><a href="mailto:paulamornadoria@gmail.com" style="color:var(--roselt);">paulamornadoria@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Paula Morna Dória. <span data-en>All rights reserved.</span><span data-pt>Todos os direitos reservados.</span></span>
+    <span data-en>Porto · Lisbon · New York</span>
+    <span data-pt>Porto · Lisboa · Nova Iorque</span>
+  </div>
+</footer>
+</div>
+
+<div class="page" id="page-gallery" data-page="gallery">
+<section id="gallery" class="section-pad">
+  <div class="wrap" style="margin-bottom:46px;">
+    <div class="section-head reveal" style="margin-bottom:0;">
+      <div class="tag-row"><div class="line"></div><div class="eyebrow" data-en>Gallery</div><div class="eyebrow" data-pt>Galeria</div></div>
+      <h2 data-en>On Stage</h2>
+      <h2 data-pt>Em Palco</h2>
+    </div>
+  </div>
+  <div class="gallery-track-wrap reveal" id="gallery-track-wrap">
+    <div class="gallery-track">
+      <div class="gallery-item wide">
+        <img src="assets/images/orchestra.jpg" alt="Curtain call with full orchestra and chorus">
+        <div class="g-cap" data-en>Curtain Call — Full Orchestra &amp; Chorus</div>
+        <div class="g-cap" data-pt>Saudação Final — Orquestra e Coro Completos</div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/portrait_bw_close.jpg" alt="Paula Morna Dória editorial black and white portrait">
+        <div class="g-cap" data-en>Studio Portrait</div>
+        <div class="g-cap" data-pt>Retrato de Estúdio</div>
+      </div>
+      <div class="gallery-item wide">
+        <img src="assets/images/audience.jpg" alt="Concert hall view from the audience during a performance">
+        <div class="g-cap" data-en>Concert Hall — Full House</div>
+        <div class="g-cap" data-pt>Sala de Concertos — Casa Cheia</div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/portrait_purple_standing.jpg" alt="Paula Morna Dória in performance gown">
+        <div class="g-cap" data-en>Performance Gown</div>
+        <div class="g-cap" data-pt>Traje de Atuação</div>
+      </div>
+      <div class="gallery-item wide">
+        <img src="assets/images/duet.jpg" alt="Duet performance in concert">
+        <div class="g-cap" data-en>Duet in Concert</div>
+        <div class="g-cap" data-pt>Dueto em Concerto</div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/portrait_bw_chiffon.jpg" alt="Close studio portrait, black and white">
+        <div class="g-cap" data-en>Close Portrait</div>
+        <div class="g-cap" data-pt>Retrato de Proximidade</div>
+      </div>
+    </div>
+  </div>
+  <div class="gallery-hint wrap"><span data-en>← Drag to explore →</span><span data-pt>← Arraste para explorar →</span></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="f-brand">Paula Morna Dória</div>
+        <p data-en>International opera soprano. D.M.A., Rutgers University. Available for engagements across Portugal, the United States, the United Kingdom, Italy and Spain.</p>
+        <p data-pt>Soprano lírica internacional. Doutorada pela Rutgers University. Disponível para contratos em Portugal, Estados Unidos, Reino Unido, Itália e Espanha.</p>
+      </div>
+      <div>
+        <h5 data-en>Navigate</h5><h5 data-pt>Navegação</h5>
+        <ul>
+          <li><a href="#" data-goto="awards" data-en>Competitions</a><a href="#" data-goto="awards" data-pt>Concursos</a></li>
+          <li><a href="#" data-goto="bio" data-en>Biography</a><a href="#" data-goto="bio" data-pt>Biografia</a></li>
+          <li><a href="#" data-goto="performances" data-en>Repertoire</a><a href="#" data-goto="performances" data-pt>Repertório</a></li>
+          <li><a href="#" data-goto="pitch" data-en>For Agents</a><a href="#" data-goto="pitch" data-pt>Para Agentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Connect</h5><h5 data-pt>Ligações</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/doriattitude" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@paulamornadoria1236" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://operabase.com/paula-doria-a23529/pt" target="_blank" rel="noopener">Operabase</a></li>
+          <li><a href="mailto:paulamornadoria@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Booking</h5><h5 data-pt>Contratação</h5>
+        <p data-en>For representation, recital programming, or season planning enquiries:</p>
+        <p data-pt>Para pedidos de representação, programação de recitais, ou planeamento de temporada:</p>
+        <p style="margin-top:10px;"><a href="mailto:paulamornadoria@gmail.com" style="color:var(--roselt);">paulamornadoria@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Paula Morna Dória. <span data-en>All rights reserved.</span><span data-pt>Todos os direitos reservados.</span></span>
+    <span data-en>Porto · Lisbon · New York</span>
+    <span data-pt>Porto · Lisboa · Nova Iorque</span>
+  </div>
+</footer>
+</div>
+
+<div class="page" id="page-credentials" data-page="credentials">
+<section id="credentials" class="section-pad on-navy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="tag-row"><div class="line"></div><div class="eyebrow" data-en>Credentials</div><div class="eyebrow" data-pt>Credenciais</div></div>
+      <h2 data-en>Diplomas &amp; Official Certificates</h2>
+      <h2 data-pt>Diplomas e Certificados Oficiais</h2>
+      <p data-en>Verifiable academic and competition documentation, available on request in full resolution for agency and producer due diligence.</p>
+      <p data-pt>Documentação académica e de concursos verificável, disponível a pedido em resolução completa para verificação por agências e produtoras.</p>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert-card reveal" onclick="openLightbox('assets/images/dma_cert.jpg')">
+        <div class="cert-img"><img src="assets/images/dma_cert.jpg" alt="Doctor of Musical Arts diploma, Rutgers University"></div>
+        <div class="cert-cap">
+          <div class="cc-title">Doctor of Musical Arts</div>
+          <div class="cc-sub">Rutgers University, 2012</div>
+        </div>
+      </div>
+      <div class="cert-card reveal d1" onclick="openLightbox('assets/images/dma_registo.jpg')">
+        <div class="cert-img"><img src="assets/images/dma_registo.jpg" alt="Official registration of the doctoral degree, Universidade de Évora"></div>
+        <div class="cert-cap">
+          <div class="cc-title" data-en>Degree Registration</div>
+          <div class="cc-title" data-pt>Registo do Grau Académico</div>
+          <div class="cc-sub">Universidade de Évora, 2012</div>
+        </div>
+      </div>
+      <div class="cert-card reveal d2" onclick="openLightbox('assets/images/nyma_cert.jpg')">
+        <div class="cert-img"><img src="assets/images/nyma_cert.jpg" alt="NYMA 2026 award certificate"></div>
+        <div class="cert-cap">
+          <div class="cc-title">NYMA — New York Music Award</div>
+          <div class="cc-sub" data-en>Grand Prize &amp; Platinum, 2026</div>
+          <div class="cc-sub" data-pt>Grande Prémio e Platina, 2026</div>
+        </div>
+      </div>
+      <div class="cert-card reveal d3" onclick="openLightbox('assets/images/voicewinners_cert.jpg')">
+        <div class="cert-img"><img src="assets/images/voicewinners_cert.jpg" alt="Voice Winners 2025 award certificate"></div>
+        <div class="cert-cap">
+          <div class="cc-title">Voice Winners</div>
+          <div class="cc-sub" data-en>Gold Prize, 2025</div>
+          <div class="cc-sub" data-pt>Prémio de Ouro, 2025</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="f-brand">Paula Morna Dória</div>
+        <p data-en>International opera soprano. D.M.A., Rutgers University. Available for engagements across Portugal, the United States, the United Kingdom, Italy and Spain.</p>
+        <p data-pt>Soprano lírica internacional. Doutorada pela Rutgers University. Disponível para contratos em Portugal, Estados Unidos, Reino Unido, Itália e Espanha.</p>
+      </div>
+      <div>
+        <h5 data-en>Navigate</h5><h5 data-pt>Navegação</h5>
+        <ul>
+          <li><a href="#" data-goto="awards" data-en>Competitions</a><a href="#" data-goto="awards" data-pt>Concursos</a></li>
+          <li><a href="#" data-goto="bio" data-en>Biography</a><a href="#" data-goto="bio" data-pt>Biografia</a></li>
+          <li><a href="#" data-goto="performances" data-en>Repertoire</a><a href="#" data-goto="performances" data-pt>Repertório</a></li>
+          <li><a href="#" data-goto="pitch" data-en>For Agents</a><a href="#" data-goto="pitch" data-pt>Para Agentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Connect</h5><h5 data-pt>Ligações</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/doriattitude" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@paulamornadoria1236" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://operabase.com/paula-doria-a23529/pt" target="_blank" rel="noopener">Operabase</a></li>
+          <li><a href="mailto:paulamornadoria@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Booking</h5><h5 data-pt>Contratação</h5>
+        <p data-en>For representation, recital programming, or season planning enquiries:</p>
+        <p data-pt>Para pedidos de representação, programação de recitais, ou planeamento de temporada:</p>
+        <p style="margin-top:10px;"><a href="mailto:paulamornadoria@gmail.com" style="color:var(--roselt);">paulamornadoria@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Paula Morna Dória. <span data-en>All rights reserved.</span><span data-pt>Todos os direitos reservados.</span></span>
+    <span data-en>Porto · Lisbon · New York</span>
+    <span data-pt>Porto · Lisboa · Nova Iorque</span>
+  </div>
+</footer>
+</div>
+
+<div class="page" id="page-contact" data-page="contact">
+<section id="contact" class="section-pad">
+  <div class="wrap">
+    <div class="contact-layout">
+      <div class="contact-info reveal">
+        <div class="tag-row"><div class="line"></div><div class="eyebrow" data-en>Contact</div><div class="eyebrow" data-pt>Contacto</div></div>
+        <h2 style="margin-bottom:30px;" data-en>Let's Bring This Voice<br>to Your Stage</h2>
+        <h2 style="margin-bottom:30px;" data-pt>Vamos Levar Esta Voz<br>ao Seu Palco</h2>
+
+        <div class="info-item">
+          <div class="il" data-en>Email</div><div class="il" data-pt>Email</div>
+          <div class="iv"><a href="mailto:paulamornadoria@gmail.com">paulamornadoria@gmail.com</a></div>
+        </div>
+        <div class="info-item">
+          <div class="il">Instagram</div>
+          <div class="iv"><a href="https://www.instagram.com/doriattitude" target="_blank" rel="noopener">@doriattitude</a></div>
+        </div>
+        <div class="info-item">
+          <div class="il">YouTube</div>
+          <div class="iv"><a href="https://www.youtube.com/@paulamornadoria1236" target="_blank" rel="noopener">@paulamornadoria1236</a></div>
+        </div>
+        <div class="info-item">
+          <div class="il">Operabase</div>
+          <div class="iv"><a href="https://operabase.com/paula-doria-a23529/pt" target="_blank" rel="noopener" style="font-size:1.05rem;">operabase.com/paula-doria-a23529</a></div>
+        </div>
+        <div class="info-item">
+          <div class="il" data-en>Based In</div><div class="il" data-pt>Baseada em</div>
+          <div class="iv">Porto, Portugal</div>
+        </div>
+      </div>
+
+      <form class="form-grid reveal" onsubmit="event.preventDefault(); document.getElementById('form-success').style.display='block'; this.reset();">
+        <div class="form-row">
+          <div class="field">
+            <label data-en>Full Name</label><label data-pt>Nome Completo</label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label data-en>Email</label><label data-pt>Email</label>
+            <input type="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label data-en>Organisation</label><label data-pt>Organização</label>
+            <input type="text">
+          </div>
+          <div class="field">
+            <label data-en>Enquiry Type</label><label data-pt>Tipo de Pedido</label>
+            <select>
+              <option data-en>Booking / Performance</option>
+              <option data-pt>Contratação / Atuação</option>
+              <option data-en>Agency Representation</option>
+              <option data-pt>Representação por Agência</option>
+              <option data-en>Press / Media</option>
+              <option data-pt>Imprensa / Media</option>
+              <option data-en>Recording / Label</option>
+              <option data-pt>Gravação / Editora</option>
+              <option data-en>Other</option>
+              <option data-pt>Outro</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label data-en>Message</label><label data-pt>Mensagem</label>
+          <textarea required></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold" style="width:fit-content;">
+          <span data-en>Send Enquiry</span><span data-pt>Enviar Pedido</span>
+        </button>
+        <p id="form-success" style="display:none;color:var(--gold-pale);font-family:'Rajdhani',sans-serif;font-size:.88rem;letter-spacing:.04em;">
+          <span data-en>Thank you — your enquiry has been noted. Please also reach out directly via email for time-sensitive requests.</span>
+          <span data-pt>Obrigado — o seu pedido foi registado. Para pedidos urgentes, contacte também diretamente por email.</span>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="f-brand">Paula Morna Dória</div>
+        <p data-en>International opera soprano. D.M.A., Rutgers University. Available for engagements across Portugal, the United States, the United Kingdom, Italy and Spain.</p>
+        <p data-pt>Soprano lírica internacional. Doutorada pela Rutgers University. Disponível para contratos em Portugal, Estados Unidos, Reino Unido, Itália e Espanha.</p>
+      </div>
+      <div>
+        <h5 data-en>Navigate</h5><h5 data-pt>Navegação</h5>
+        <ul>
+          <li><a href="#" data-goto="awards" data-en>Competitions</a><a href="#" data-goto="awards" data-pt>Concursos</a></li>
+          <li><a href="#" data-goto="bio" data-en>Biography</a><a href="#" data-goto="bio" data-pt>Biografia</a></li>
+          <li><a href="#" data-goto="performances" data-en>Repertoire</a><a href="#" data-goto="performances" data-pt>Repertório</a></li>
+          <li><a href="#" data-goto="pitch" data-en>For Agents</a><a href="#" data-goto="pitch" data-pt>Para Agentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Connect</h5><h5 data-pt>Ligações</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/doriattitude" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@paulamornadoria1236" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://operabase.com/paula-doria-a23529/pt" target="_blank" rel="noopener">Operabase</a></li>
+          <li><a href="mailto:paulamornadoria@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en>Booking</h5><h5 data-pt>Contratação</h5>
+        <p data-en>For representation, recital programming, or season planning enquiries:</p>
+        <p data-pt>Para pedidos de representação, programação de recitais, ou planeamento de temporada:</p>
+        <p style="margin-top:10px;"><a href="mailto:paulamornadoria@gmail.com" style="color:var(--roselt);">paulamornadoria@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Paula Morna Dória. <span data-en>All rights reserved.</span><span data-pt>Todos os direitos reservados.</span></span>
+    <span data-en>Porto · Lisbon · New York</span>
+    <span data-pt>Porto · Lisboa · Nova Iorque</span>
+  </div>
+</footer>
+</div>
+
+</div><!-- /site -->
+
+<!-- ═══════════════ LIGHTBOX ═══════════════ -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
